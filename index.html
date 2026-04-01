@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Linked Scatter Plot and Box Plot</title>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<link rel="stylesheet" href="hgande.css">
+
+</head>
+
+<body>
+
+<h1>Linked Scatter Plot + Animated Box Plot</h1>
+<p>Harshini Gande | hgande@asu.edu</p>
+
+<div id="controls">
+
+<label>Dataset</label>
+<select id="dataset"></select>
+
+<label>X Attribute</label>
+<select id="xAttr"></select>
+
+<label>Y Attribute</label>
+<select id="yAttr"></select>
+
+<label>Color</label>
+<select id="colorAttr"></select>
+
+<label>Boxplot</label>
+<select id="boxAttr"></select>
+
+<label>Plot Type</label>
+<select id="plotType">
+<option value="box">Box Plot</option>
+<option value="violin">Violin Plot</option>
+</select>
+
+</div>
+
+<div id="layout">
+
+<div class="panel">
+
+<h3>Scatter Plot</h3>
+<svg id="scatter"></svg>
+<div id="legend"></div>
+
+</div>
+
+<div class="panel">
+
+<h3>Box Plot</h3>
+<svg id="box"></svg>
+<p id="count">Selected: 0</p>
+
+</div>
+
+</div>
+
+<script src="hgande.js"></script>
+
+</body>
+</html>
